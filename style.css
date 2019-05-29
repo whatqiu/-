@@ -1,0 +1,21 @@
+.index-login{
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 50px;
+}
+.login-box{
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .navbar-toggler{
+        display: none;
+    }
+    .navbar-collapse{
+        display: contents;
+    }
+
+}

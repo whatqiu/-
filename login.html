@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>星星后台管理</title>
+</head>
+<body class="bg-secondary">
+    <div class="text-center" style="padding-top: 100px">
+        <div class="index-login">
+            <div class="login-box">
+                <img src="login.jpg" width="70%" >
+                <br>
+                <br>
+                <h3>星星后台管理</h3>
+                <div class="form-group">
+                    <input type="text" id="account" class="form-control" placeholder="请输入账号">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="pwd" class="form-control" placeholder="请输入密码">
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox">
+                        记住我
+                    </label>
+                </div>
+                <button type="button" class="btn btn-success mr-5">注册</button>
+                <button type="submit" id="submit" class="btn btn-success">登陆</button>
+            </div>
+            <div id="error" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="content-header">
+                            <h4 id="error_title">
+                                登陆失败，请重试
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <footer class="fixed-bottom">
+        <p class=" text-center"> Copyright @ 2019 ❤QXX All Rights Reserved</p>
+    </footer>
+</body>
+
+<script type="text/javascript">
+    $('#submit').click(function () {
+        var account = $("#account").val();
+        if(!account){
+            $("#error_title").text("账号不能为空");
+            $("#error").modal('show');
+            setTimeout(function () {
+                $("#error").modal("hide");
+            },1500);
+            return false;
+        }
+        var  pwd = $('#pwd').val();
+        if(!pwd){
+            $("#error_title").text("密码不能为空");
+            $("#error").modal('show');
+            setTimeout(function () {
+                $("#error").modal('hide');
+            },1500);
+            return false;
+        }
+        location.href = "index.html";
+    })
+</script>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>后台管理-用户列表</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="nav-item navbar-brand " href="index.html">
+            <img src="logo.svg" height="30">
+            后台管理
+        </a>
+        <button class="navbar-toggler p-0 collapsed" type="button" data-toggle="collapse" data-target="#info">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="info" class="collapse navbar-collapse">
+            <ul class="nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> admin</a>
+                    <ul class="dropdown-menu ">
+                        <li class="dropdown-item"><a href="#">个人资料</a> </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-item"><a href="login.html">退出</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="row container-fluid mt-3" style="height: 980px;">
+    <div class="col-sm col-md-2">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"> <img src="svg/home.svg" alt="" width="15">  首页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="config.html"> <img src="svg/cog.svg" width="15" >  网站配置</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="admin.html"><img src="svg/person.svg" width="15">  管理员</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="userlist.html"> <img src="svg/list.svg" width="15">  用户列表</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shoplist.html"> <img  src="svg/image.svg" width="15">  商品列表</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-10 col-sm-10">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">首页</a>
+            </li>
+            <li class="breadcrumb-item active">
+                用户列表
+            </li>
+        </ol>
+
+        <div class="container mt-4">
+            <form>
+                <div class="form-inline justify-content-between" action="admin.html" method="get">
+                    <div class="form-group d-flex ">
+                        <label class="col-form-label">用户名：</label>
+                        <input type="text" class="form-control ml-2" placeholder="请输入关键字">
+                        <button class="btn btn-primary ml-3" type="submit">
+                            搜索
+                        </button>
+                    </div>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#add">新增用户</button>
+                </div>
+            </form>
+<!--            一组成员-->
+            <div class="row mt-4">
+                <div class="col-4  col-sm-6 col-md-4">
+                    <div class="card">
+                        <div class="p-3 text-center">
+                            <img class="rounded" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558975614557&di=030c87e3b2d306c79c3c6e51fde42f86&imgtype=0&src=http%3A%2F%2Ftupian.qqjay.com%2Ftou2%2F2018%2F0814%2F8005533ee657a1fb6f54d55041b573af.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">帅的一批</h4>
+                            <p><span class="badge-success p-1">正常</span></p>
+                            <button class="btn btn-success btn-sm">修改</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4  col-sm-6 col-md-4">
+                    <div class="card">
+                        <div class="p-3 text-center">
+                            <img class="rounded" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558979057403&di=cd01d356ef11ad54add178c76c772f6f&imgtype=0&src=http%3A%2F%2Ftupian.qqjay.com%2Ftou2%2F2018%2F0804%2F6563d088eee641287654166efc32cbae.jpg">
+                        </div>
+                    <div class="card-body">
+                        <h4 class="card-title">骚的一批</h4>
+                        <p><span class="badge-secondary p-1">离线</span></p>
+                        <button class="btn btn-success btn-sm">修改</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-4  col-sm-6 col-md-4">
+                    <div class="card">
+                        <div class="p-3 text-center">
+                            <img class="rounded" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558978994978&di=72eddcb4dc37ad02f5b0b0c96432addb&imgtype=0&src=http%3A%2F%2Fimg1.touxiang.cn%2Fuploads%2F20131204%2F04-085800_776.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">帅的一批</h4>
+                            <p><span class="badge-secondary p-1">离线</span></p>
+                            <button class="btn btn-success btn-sm">修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-4  col-sm-6 col-md-4">
+                    <div class="card">
+                        <div class="p-3 text-center ">
+                            <img class="rounded" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558979465126&di=2cfc4eb14e4f5fc242a7990be21c01d0&imgtype=0&src=http%3A%2F%2Fi4.hexunimg.cn%2F2013-02-03%2F150891154.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">东方不败</h4>
+                            <p><span class="badge-success p-1">正常</span></p>
+                            <button class="btn btn-success btn-sm">修改</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4  col-sm-6 col-md-4">
+                    <div class="card">
+                        <div class="p-3 text-center">
+                            <img class="rounded" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1558975614557&di=030c87e3b2d306c79c3c6e51fde42f86&imgtype=0&src=http%3A%2F%2Ftupian.qqjay.com%2Ftou2%2F2018%2F0814%2F8005533ee657a1fb6f54d55041b573af.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">西方失败</h4>
+                            <p><span class="badge-success p-1">正常</span></p>
+                            <button class="btn btn-success btn-sm">修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

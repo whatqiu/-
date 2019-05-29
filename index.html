@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>星星后台管理</title>
+</head>
+<body >
+<!--导航-->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="nav-item navbar-brand " href="index.html">
+            <img src="logo.svg" height="30">
+            后台管理
+        </a>
+        <button class="navbar-toggler p-0 collapsed" type="button" data-toggle="collapse" data-target="#info">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="info" class="collapse navbar-collapse">
+            <ul class="nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> admin</a>
+                    <ul class="dropdown-menu ">
+                        <li class="dropdown-item"><a href="#">个人资料</a> </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-item"><a href="/login.html">退出</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="row container-fluid mt-3" style="height: 980px;">
+    <div class="col-sm col-md-2 ">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"> <img src="svg/home.svg" alt="" width="15">  首页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="config.html"> <img src="svg/cog.svg" width="15" >  网站配置</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="admin.html"><img src="svg/person.svg" width="15">  管理员</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="userlist.html"> <img src="svg/list.svg" width="15">  用户列表</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shoplist.html"> <img  src="svg/image.svg" width="15">  商品列表</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-10 col-sm-10">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">首页</a>
+            </li>
+            <li class="breadcrumb-item active">
+                详情
+            </li>
+        </ol>
+
+<!--        主体-->
+        <div class="container-fluid">
+            <div class="row col-sm-12">
+                <div class="col-sm-4">
+                    <ul class="list-group ">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            今日新增用户数量<span class="badge alert-success">6</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            7日新增用户数量 <span class="badge alert-success">15</span>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            30日新增用户数量<span class="badge alert-success">20</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            总用户数量<span class="badge alert-success">12321</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="list-group ">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            待收货<span class="badge alert-success">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            待发送 <span class="badge alert-success">20</span>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            已确认<span class="badge alert-success">1001</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="list-group ">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            今日新增订单<span class="badge alert-success">40</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            7日新增订单 <span class="badge alert-success">230</span>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            30日新增订单<span class="badge alert-success">560</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            总订单数量<span class="badge alert-success">12000</span>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="container-fluid mt-5">
+                    <h4>通知</h4>
+                    <br>
+                    <div class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" data-target="#inform1">
+                            <a href="" >通知</a>
+                        </div>
+                        <div class="collapse" id="inform1">
+                            <div class="card-body " >
+                                KKKKKKK
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-header" data-toggle="collapse" data-target="#inform2">
+                            <a href="" >通知</a>
+                        </div>
+                        <div class="collapse" id="inform2">
+                            <div class="card-body " >
+                                KKKKKKK
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-header" data-toggle="collapse" data-target="#inform3">
+                            <a href="" >通知</a>
+                        </div>
+                        <div class="collapse" id="inform3"">
+                        <div class="card-body">
+                            LLLLLLLLLL
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header" data-toggle="collapse" data-target="#inform4">
+                        <a href="" >通知</a>
+                    </div>
+                    <div class="collapse" id="inform4">
+                        <div class="card-body " >
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officiis, possimus. Accusantium dolores perferendis quas!
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
